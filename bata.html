@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="nav-wrapper" id="navbar" style="z-index: 2;">
+            <div class="left-side">
+                <div class="brand">
+                    <img src="images/elements/logo-white.png" width="10%">
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="home.html#project">Project</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+    </header>
+
+    <div class="container" >
+        <div class="pre-content-wrapper">
+            <div class="self-portrait">
+                <div class="main-img" style="margin-left: 250px; margin-top: 0px; position: relative; z-index: 1;">
+                    <img src="images/bata/7.jpg" width="650px" height="430px">
+                </div>
+                <div class="big-idea-statement" style="z-index: 2; top: 20px;">
+                    <img src="images/bata/bata-bigidea.png" width="400px" height="200px">
+                </div>
+            </div>
+            <div class="stars" style="z-index: -1">
+                <img src="images/elements/stars.png" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <section class="sec1">
+        <div class="content-wrapper" id="project" style="height: 1230px;">
+
+            <hr style="width: 66%; margin-top: 70px;">
+            <div class="background">
+                <div class="title">Background</div>
+                <div class="content">With rising shoe companies in the market, Bata is struggling to keep up. Bata has
+                    been
+                    around Malaysia for around 90 years. The tagline “First to Bata, then to school” has been long gone.
+                    Now, people think of Bata as “Buy And Throw Away”.
+                </div>
+            </div>
+            <hr>
+            <div class="objective">
+                <div class="title">Objective</div>
+                <div class="content">We want to remind Malaysians that Bata has once accompanied them through different
+                    stages of life.
+                </div>
+            </div>
+            <hr>
+            <div class="big-idea">
+                <div class="title">Big Idea</div>
+                <div class="content">Bata carries everyone’s memories. It is a shoe that was in some part of everyone’s
+                    life
+                    and captures our most precious moments. It is like your friend. A friend that knows you well. Bata
+                    Fits
+                    You Like A Friend.
+                </div>
+            </div>
+
+            <div class="image-slider" style="height: 340px;">
+                <span id="slider-image-1"></span>
+                <span id="slider-image-2"></span>
+                <span id="slider-image-3"></span>
+                <div class="image-container">
+                    <img src="images/bata/poster.png" class="slider-image;" style="width: 100%;">
+                    <img src="images/bata/poster-1.png" class="slider-image;" style="width: 100%;">
+                    <img src="images/bata/poster-2.png" class="slider-image;" style="width: 100%;">   
+                </div>
+                <div class="button-container">
+                    <a href="#slider-image-1" class="slider-button-bata"></a>
+                    <a href="#slider-image-2" class="slider-button-bata"></a>
+                    <a href="#slider-image-3" class="slider-button-bata"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() }
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+        var project = document.getElementById("project");
+
+        console.log(project.offsetTop);
+        // Get the offset position of the navbar
+
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            console.log(window.pageYOffset);
+            if (window.pageYOffset >= 560) {
+                navbar.classList.add("sticky");
+
+
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

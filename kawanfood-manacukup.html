@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="nav-wrapper" id="navbar" style="z-index: 2;">
+            <div class="left-side">
+                <div class="brand">
+                    <img src="images/elements/logo-white.png" width="10%">
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="home.html#project">Project</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="pre-content-wraper">
+            <div class="self=portrait">
+                <div class="main-img" style="margin-left: 250px; margin-top: 60px; position: relative; z-index: 1;">
+                    <img src="images/kawanfood-manacukup/rice-ball.png" width="650px" height="430px">
+                </div>
+                <div class="big-idea-statement" style="z-index: 2; top:20px;">
+                    <img src="images/kawanfood-manacukup/kawanfood-manacukup-bigidea.png" width="400px">
+                </div>
+            </div>
+            <div class="stars" style="z-index: 0">
+                <img src="images/elements/stars.png" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <section="sec1">
+        <div class="content-wrapper" id="project" style="height: 1270px;">
+
+            <hr style="width: 66%; margin-top: 70px;">
+            <div class="background">
+                <div class="title">Background</div>
+                <div class="content">Kawan Food is Malaysia’s leading frozen Asian delicacies with Halal Certificate.
+                    Despite that, most Malay Gen Z and Millennials are not aware of KawanFood not to mention KG Pastry
+                    Glutinous Rice Balls.
+                </div>
+            </div>
+            <hr>
+            <div class="objective">
+                <div class="title">Objective</div>
+                <div class="content">We want to create brand salience amongst Malay Gen Z and Millennials by introducing
+                    them to KG Pastry Glutinous Rice Balls.
+                </div>
+            </div>
+            <hr>
+            <div class="big-idea">
+                <div class="title">Big Idea</div>
+                <div class="content">In order to understand our target audience, we held focus groups to let them test
+                    the
+                    product and gained useful insights which helped with our executions. Through the insights gathered,
+                    we
+                    found out that most of them agree that Kawan Food provides the yummiest glutinous rice balls that
+                    will
+                    get you hooked. You won’t be able to stop, cause “Mana Cukup?”. One is definitely not enough.
+                </div>
+            </div>
+
+            <div class="image-slider"  style="height: 400px;">
+                <span id="slider-image-1"></span>
+                <span id="slider-image-2"></span>
+                <span id="slider-image-3"></span>
+                <span id="slider-image-4"></span>
+                <span id="slider-image-5"></span>
+                <span id="slider-image-6"></span>
+                <div class="image-container">
+                    <img src="images/kawanfood-manacukup/game1.png" class="slider-image;" style="width: 100%;">
+                    <img src="images//kawanfood-manacukup/game2.png" class="slider-image;" style="width: 100%;">
+                    <img src="images/kawanfood-manacukup/game3.png" class="slider-image;" style="width: 100%;">
+                    <img src="images/kawanfood-manacukup/game4.png" class="slider-image;" style="width: 100%;">
+                    <img src="images/kawanfood-manacukup/poster.png" class="slider-image;" style="width: 100%;">
+                    <img src="images/kawanfood-manacukup/packaging.png" class="slider-image;" style="width: 100%;">
+                </div>
+                <div class="button-container-manacukup" style="top:250px;">
+                    <a href="#slider-image-1" class="slider-button"></a>
+                    <a href="#slider-image-2" class="slider-button"></a>
+                    <a href="#slider-image-3" class="slider-button"></a>
+                    <a href="#slider-image-4" class="slider-button"></a>
+                    <a href="#slider-image-5" class="slider-button"></a>
+                    <a href="#slider-image-6" class="slider-button"></a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function () { myFunction() }
+
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+            var project = document.getElementById("project");
+
+            console.log(project.offsetTop);
+            // Get the offset position of the navbar
+
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                console.log(window.pageYOffset);
+                if (window.pageYOffset >= 560) {
+                    navbar.classList.add("sticky");
+
+
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+
+        </script>
+
+</body>
+
+</html>

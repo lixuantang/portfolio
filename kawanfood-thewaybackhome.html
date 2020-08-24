@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="nav-wrapper" id="navbar" style="z-index: 2;">
+        <div class="left-side">
+            <div class="brand">
+                <img src="images/elements/logo-white.png" width="10%">
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="nav-link-wrapper">
+                <a href="home.html">Home</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="home.html#project">Project</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="pre-content-wrapper">
+            <div class="self-portrait">
+                <div class="main-img" style="margin-left: 250px; margin-top: 0px; position: relative; z-index: 1;">
+                    <img src="images/kawanfood-thewaybackhome/bento.png" width="550px" height="430px">
+                </div>
+
+                <div class="big-idea-statement" style="z-index: 2; top: 20px;">
+                    <img src="images/kawanfood-thewaybackhome/kawanfood-thewaybackhome-bigidea.png" width="400px">
+                </div>
+            </div>
+            <div class="stars" style="z-index: -1">
+                <img src="images/elements/stars.png" width="100%">
+            </div>
+        </div>
+    </div>
+
+<section="sec1">
+    <div class="content-wrapper" id="project" style="height: 1170px;">
+
+        <hr style="width: 66%; margin-top: 70px;">
+        <div class="background">
+            <div class="title">Background</div>
+            <div class="content">Malaysian perceive frozen food as unhealthy and bland in taste. They try to avoid
+                buying frozen as much as possible because of this mindset. This hurts Kawan Food’s sales even though it
+                is the leading Frozen food manufacturer in Malaysia.
+            </div>
+        </div>
+        <hr>
+        <div class="objective">
+            <div class="title">Objective</div>
+            <div class="content">We want to build brand awareness, strengthen the brand-consumer relationship and
+                promote repeat purchase by changing their mindsets.
+            </div>
+        </div>
+        <hr>
+        <div class="big-idea">
+            <div class="title">Big Idea</div>
+            <div class="content">We gathered some insights on frozen food after tasting it, and most of them said that
+                it does not have the frozen-food taste. It is just as good as home-cooked food. Kawan Food provides
+                meals that reminds you of your mom’s home cook food. It brings you to The Way Back Home.
+            </div>
+        </div>
+
+        <div class="image-slider" style="height: 450px">
+            <span id="slider-image-1"></span>
+            <span id="slider-image-2"></span>
+            <span id="slider-image-3"></span>
+            <span id="slider-image-4"></span>
+            <span id="slider-image-5"></span>
+
+            <div class="image-container">
+                <img src="images/kawanfood-thewaybackhome/bentu-pack.png" class="slider-image;" style="width: 100%;">
+                <img src="images/kawanfood-thewaybackhome/instore.png" class="slider-image;" style="width: 100%;">
+                <img src="images/kawanfood-thewaybackhome/youtube.png" class="slider-image;" style="width: 100%;">
+                <img src="images/kawanfood-thewaybackhome/socialmedia.png" class="slider-image;" style="width:100%">
+                <img src="images/kawanfood-thewaybackhome/radio.png" class="slider-image;" style="width: 100%;">
+            </div>
+            <div class="button-container-kawanfood-thewaybackhome">
+                <a href="#slider-image-1" class="slider-button"></a>
+                <a href="#slider-image-2" class="slider-button"></a>
+                <a href="#slider-image-3" class="slider-button"></a>
+                <a href="#slider-image-4" class="slider-button"></a>
+                <a href="#slider-image-5" class="slider-button"></a>
+            </div>
+            <!-- <audio controls>
+                <source src="images/kawanfood-thewaybackhome/Radio.mp3" type="audio/mp3">
+            </audio> -->
+        </div>
+    </div>
+</section>
+
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() }
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+    var project = document.getElementById("project");
+
+    console.log(project.offsetTop);
+    // Get the offset position of the navbar
+
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        console.log(window.pageYOffset);
+        if (window.pageYOffset >= 560) {
+            navbar.classList.add("sticky");
+
+
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+</script>
+
+</body>
+
+</html>
